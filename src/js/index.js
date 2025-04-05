@@ -40,9 +40,11 @@ const analizeText = () => {
   calculateReadingTime(value);
   const totalCharacters = value.length;
   totalCharactersElement.textContent = totalCharacters < 10 ? '0' + totalCharacters : totalCharacters;
+
   if (excludeSpacesElement.checked) {
-    totalCharactersElement.textContent =
-      totalCharacters - countSpaces(value) < 10 ? '0' + totalCharacters - countSpaces(value) : totalCharacters - countSpaces(value);
+    const totalCharactersWthoutSpaces = totalCharacters - countSpaces(value);
+    console.log(totalCharactersWthoutSpaces);
+    totalCharactersElement.textContent = totalCharactersWthoutSpaces < 10 ? '0' + totalCharactersWthoutSpaces : totalCharactersWthoutSpaces;
   }
   const wordCount = value.split(' ').length;
   wordCountElement.textContent = wordCount < 10 ? '0' + wordCount : wordCount;

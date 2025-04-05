@@ -8,7 +8,7 @@ body {
   color: aliceblue;
   padding: 1rem;
   font-family: 'DM Sans', sans-serif;
-  background-image: url(../../assets/images/bg-dark-theme.png);
+  background-image: url(../assets/images/bg-dark-theme.png);
 }
 
 .header {
@@ -64,15 +64,15 @@ body {
 
 .card-total-characters {
   background-color: #d3a0fa;
-  background-image: url(../../assets/images/pattern-character-count.svg);
+  background-image: url(../assets/images/pattern-character-count.svg);
 }
 .card-word-count {
   background-color: #ff9f00;
-  background-image: url(../../assets/images/pattern-word-count.svg);
+  background-image: url(../assets/images/pattern-word-count.svg);
 }
 .card-sentence-count {
   background-color: #fe8159;
-  background-image: url(../../assets/images/pattern-sentence-count.svg);
+  background-image: url(../assets/images/pattern-sentence-count.svg);
 }
 
 .card-counter {
